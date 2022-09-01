@@ -1,4 +1,5 @@
 .idea/
-data/akshare_data/
-qlib-main
+data/test_data/
+qlib-main/
 .ipynb_checkpoints/
+dump_code.txt

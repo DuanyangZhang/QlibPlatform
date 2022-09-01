@@ -1,0 +1,14 @@
+# dump all data
+python qlib-main/scripts/dump_bin.py dump_all --csv_path  ../AkData/data/test --qlib_dir data/qlib_data/cn_data_ak
+
+# dump new feature or stock
+python qlib-main/scripts/dump_bin.py dump_fix --csv_path  ../AkData/data/test --qlib_dir data/qlib_data/cn_data_ak
+
+# dump new date
+python qlib-main/scripts/dump_bin.py dump_update --csv_path  ../AkData/data/test --qlib_dir data/qlib_data/cn_data_ak
+
+# parse instruments, using in qlib/instruments.
+python qlib-main/scripts/data_collector/cn_index/collector.py --index_name CSI300 --qlib_dir data/test_data --method parse_instruments
+
+# parse new companies
+python collector.py --index_name CSI300 --qlib_dir ~/.qlib/qlib_data/cn_data --method save_new_companies
