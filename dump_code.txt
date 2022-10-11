@@ -11,4 +11,4 @@ python qlib-main/scripts/dump_bin.py dump_update --csv_path  ../AkData/data/test
 python qlib-main/scripts/data_collector/cn_index/collector.py --index_name CSI300 --qlib_dir data/test_data --method parse_instruments
 
 # parse new companies
-python collector.py --index_name CSI300 --qlib_dir ~/.qlib/qlib_data/cn_data --method save_new_companies
+python qlib-main/scripts/data_collector/cn_index/collector.py --index_name CSI300 --qlib_dir data/test_data --method save_new_companies
